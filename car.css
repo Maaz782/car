@@ -1,72 +1,86 @@
 *{
     margin: 0%;
-    padding: 0;        ;
-}
-.container{
-    height: 600vh;
-    width: 800vw;
-    position: relative;
-}
-.body{
-    overflow: hidden;
+    padding: 0%;
+}.body{
+
     animation: shakebody linear 10s infinite;
 }
+.container{
+    height: 200vh;
+    width: 400vw;
+    position: relative;
+    overflow: hidden;
+}
+    
 
 .sky{
 
-    height:400vh;
-    width:800vw;
+    height:70vh;
+    width:400vw;
     background-image:url(" background.jpg");
     position: absolute;
     background-size: cover;
 }
 .trees{
-    top:-20vh;
-    height:100vh;
+    top:-40vh;
+    height:125vh;
     width:100vw;
     background-image: url("trees.png");
     position: absolute;
     background-size: cover;
     background-repeat:repeat-x;
-   animation: treemove linear 8s infinite;
+  animation: treemove linear 6s infinite;
 }
+.trees2{
+    top:-40vh;
+    height:125vh;
+    width:100vw;
+    left: 200vw;
+    background-image: url("trees.png");
+    position: absolute;
+    background-size: cover;
+    background-repeat:repeat-x;
+   animation: treemove linear 6s infinite;
+
+}
+
 .road{
-    top: 60vh;
-    height:40%;
-    width: 900vw;
+    top: 70vh;
+    height:115vh;
+    width: 700vw;
     background-image: url("track.png");
     position:absolute;
     background-size: cover;
     background-repeat: repeat-x;
-    animation: carmove linear 2s infinite;
+    animation: carmove linear 3s infinite;
 }
 .car {
-
-    height:50vh;
-    width:90vw;
-    top: 45vh;
-    left: 20vw;
+    
+    height:22vh;
+    width:40vw;
+    top: 60vh;
+    left: 15vw;
     background-image: url("car_body.png");
    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
     animation: shake linear 1s infinite;
 }
 .wheel1 img{
-    top: 20vh;
-      width: 225px;
-      left:57.5vw;
+    top: 9vh;
+      width: 59px;
+      left:27.4vw;
       position:relative;
       animation: wheelrotation linear .30s infinite;
-
+    
 
 
 }
 .wheel2 img{
-    top:-15vh;
-    width:220px;
-    left: 11vw;
+    top:-7vh;
+    width:58px;
+    left: 5.4vw;
     position:relative;
     animation: wheelrotation linear .30s infinite;
 
@@ -97,6 +111,11 @@
     transform: translate(-50px);
 }
 }
+@keyframes skymove{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
 
 @keyframes shake
 {
@@ -110,4 +129,3 @@
     transform: translateY(-5px);
 }
 }
- 28  car.html 
